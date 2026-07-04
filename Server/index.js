@@ -18,9 +18,13 @@ const reviewRoutes = require("./routes/review");
 const stockRoutes = require("./routes/stock");
 const cors = require("cors");
 const corsOptions = {
-    origin: "http://localhost:5173, http://localhost:8000",
-    credentials: true,
-    optionSuccessStatus: 200
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:8000",
+    "https://taro606-ecommerce-app.vercel.app"
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
 };
 
 // APP INITIALIZATION 
